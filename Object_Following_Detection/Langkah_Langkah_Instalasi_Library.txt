@@ -1,0 +1,73 @@
+Untuk menjalankan kode deteksi objek dengan YOLO menggunakan ultralytics dan OpenCV, 
+kamu perlu menginstal beberapa dependensi dan library terlebih dahulu. 
+Berikut adalah tutorial langkah demi langkah untuk menginstal dependensi yang diperlukan:
+
+
+
+Langkah 1: Persiapkan Lingkungan Python
+Pastikan kamu sudah menginstal Python (rekomendasi versi 3.8 atau lebih baru) di komputer kamu. 
+Kamu bisa memeriksanya dengan menjalankan perintah berikut di terminal atau command prompt:
+
+
+				python --version
+
+
+Jika Python belum terinstal, kamu bisa mengunduhnya dari situs resmi Python.
+
+
+
+
+
+Langkah 2: Membuat Virtual Environment (Opsional)
+Untuk menjaga lingkungan proyek tetap bersih dan terisolasi, disarankan menggunakan virtual environment.
+Jika kamu sudah terbiasa dengan virtual environment, kamu bisa melewati langkah ini.
+
+Membuat virtual environment: Di terminal atau command prompt, jalankan perintah berikut:
+
+
+			     python -m venv yolovenv
+
+
+Aktifkan virtual environment:
+
+
+                            yolovenv\Scripts\activate
+
+
+
+
+
+
+
+Langkah 3: Instal Dependensi yang Dibutuhkan
+Berikut adalah daftar dependensi yang perlu diinstal untuk menjalankan kode:
+
+Install YOLO (ultralytics): YOLO model dari ultralytics adalah paket Python yang menyediakan model YOLO versi terbaru. 
+Jalankan perintah berikut untuk menginstalnya:
+
+
+                             pip install ultralytics
+
+
+Install OpenCV: OpenCV digunakan untuk menangani input/output video dan pemrosesan gambar. 
+Kamu dapat menginstalnya dengan perintah berikut:
+
+
+                             pip install opencv-python
+
+
+(Opsional) Install Pytorch: Jika kamu tidak memiliki PyTorch, kamu juga perlu menginstalnya untuk
+ menjalankan model YOLO. ultralytics biasanya sudah menginstalnya sebagai dependensi, 
+tetapi jika perlu, kamu bisa menginstalnya secara manual:
+
+
+                                pip install torch
+
+
+Catatan: Jika kamu menggunakan GPU, pastikan menginstal versi PyTorch yang sesuai dengan CUDA. Kamu dapat mengecek petunjuk pemasangan di halaman PyTorch.
+
+
+
+Cek Versi YOLO: Kamu bisa memeriksa versi YOLO yang digunakan dengan menjalankan perintah:
+
+                                pip show ultralytics
